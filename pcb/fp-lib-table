@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name outline)(type KiCad)(uri /Users/oliver/Development/Hardware/esp32_cloud_pcb/ressources/outline.pretty)(options "")(descr ""))
+)

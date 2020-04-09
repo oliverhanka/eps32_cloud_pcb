@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name MyAntennas)(type Legacy)(uri ${KIPRJMOD}/../ressources/PCB_Antenna_Lib/MyAntennas.lib)(options "")(descr ""))
+  (lib (name ep32_cloud-rescue)(type Legacy)(uri ${KIPRJMOD}/ep32_cloud-rescue.lib)(options "")(descr ""))
+)
