@@ -2,6 +2,23 @@
 
 This is a simplistic ESP32 based sensor node with a focus on very low power consumption while beeing idle. This means, external components are keept to a minimum and the selected LDO has a very low power consumption.
 
+#### Theoretical power consumption
+These values have not been verified by measurements and do not take the passive components into account.
+
+Power consumption while beeing in hibernation:
+| Active component | Current | Power |
+| -------- | -------- | -------- |
+| ESP32 (in hibernation)  | 5𝜇A @ 3.3V  | 16.5𝜇W |
+| LDO  | 8𝜇A @ 5V  | 40𝜇W |
+| **Total**  | **11.3𝜇A @ 5V**  | **56.5𝜇W** |
+
+While beeing active and transmitting via Wifi (BLE off):
+| Active component | Current | Power |
+| -------- | -------- | -------- |
+| ESP32 (240MHz, Wifi tx)  | 240mA @ 3.3V  | 792mW |
+| LDO  | 8𝜇A @ 5V  | 40𝜇W |
+| **Total**  | **158.4mA @ 5V**  | **792mW** |
+
 ## Connectors / headers
 
 
