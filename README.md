@@ -1,6 +1,6 @@
 # ESP32 low power sensor node
 
-This is a simplistic ESP32 based sensor node with a focus on very low power consumption while beeing idle. This means, external components are keept to a minimum and the selected LDO has a very low power consumption.
+This is a simplistic ESP32 based sensor node with a focus on very low power consumption while beeing idle. This means, external components are keept to a minimum and the selected LDO has a very low power consumption. The board can be supplied with 3.3V directly or by using the on-board LDO (max. 6V input) to generate the required 3.3V. *NOTE: The LDO_EN solder jumper must be closed in order to use the LDO.*
 
 #### Theoretical power consumption
 These values have not been verified by measurements and do not take the passive components into account.
@@ -19,7 +19,7 @@ While beeing active and transmitting via Wifi (BLE off):
 | LDO  | 8𝜇A @ 5V  | 40𝜇W |
 | **Total**  | **158.4mA @ 5V**  | **792mW** |
 
-## Connectors / headers
+## Connectors / headers / solder jumper
 
 
 | Connector | Purpose |
@@ -30,6 +30,11 @@ While beeing active and transmitting via Wifi (BLE off):
 | J4     | programming interface, compatible with [ESP-Prog](https://github.com/espressif/esp-iot-solution/blob/master/documents/evaluation_boards/ESP-Prog_guide_en.md)     |
 | J5     | various GPIOs or ADC and SPI, VCC, GND     |
 | J6     | GPIO (e.g., for WS2812, power via GPIO2)     |
+
+| Solder jumper | Purpose |
+| -------- | -------- |
+| LED_EN     | Enable blue LED D1 controlled by GPIO12)     |
+| LDO_EN     | Enable LDO (e.g., for power via USB-C)     |
 
 ## Build
 
