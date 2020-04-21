@@ -68,3 +68,15 @@ assembled front rev 1.0 | assembled back rev 1.0
 |C1 |	4.7pF (0603) |	1 |
 |U1 |	ESP32-PICO-D4 |	1 |
 |U3 |	XC6220B331MR-G |	1 |
+
+---
+
+## Changelog
+rev 1.2
+- **BREAKING CHANGE**: J6 GPIOs reassigned to GPIO 32 and GPIO 33. GPIO 32 & 33 can be used as ADC1 channels.
+
+rev 1.1
+- FIX: U3's EN pin pulled to VCC
+
+rev 1.0
+- Initial PCB layout
