@@ -796,22 +796,18 @@ Wire Wire Line
 	1650 6600 1650 6750
 Wire Wire Line
 	1200 6500 1650 6500
-Wire Wire Line
-	5450 4250 5950 4250
-Text Label 5950 4250 0    50   ~ 0
-WS2812_DATA
+Text Label 5950 4550 0    50   ~ 0
+GPIO33
 Text Label 1650 6500 0    50   ~ 0
-WS2812_DATA
+GPIO33
 Text Notes 800  6050 0    50   ~ 0
 WS2812 connector
 Wire Wire Line
 	1200 6400 1650 6400
 Text Label 1650 6400 0    50   ~ 0
-WS2812_VCC
-Wire Wire Line
-	5450 2650 6150 2650
-Text Label 6150 2650 0    50   ~ 0
-WS2812_VCC
+GPIO32
+Text Label 5950 4450 0    50   ~ 0
+GPIO32
 $Comp
 L Device:Jumper_NO_Small JP1
 U 1 1 5E375AFC
@@ -864,4 +860,12 @@ Wire Wire Line
 Connection ~ 9150 5500
 Wire Wire Line
 	9150 5500 9250 5500
+Wire Wire Line
+	5450 4450 5950 4450
+Wire Wire Line
+	5450 4550 5950 4550
+Wire Wire Line
+	5450 4650 5950 4650
+Wire Wire Line
+	5450 4750 5950 4750
 $EndSCHEMATC
